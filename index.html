@@ -1,44 +1,138 @@
 <html>
-    <head>
-        <link rel="icon" href="assets/favicon.png">
-        <title>Andy Tran</title>
 
-        <meta charset="utf-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="icon" href="assets/favicon.png">
+    <title>Andy's Portfolio</title>
 
-        <!-- Bootstrap CSS-->
-        <link rel="stylesheet" href="styles/bootstrap.min.css">
-        <link rel="stylesheet" href="styles/bootstrap-icons.css">
-    </head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
 
-    <body>
-        <!--Background Image-->
-        <img class="position-absolute w-100 h-100" src="assets/bg-image.png">
+    <!--Styles CSS-->
+    <link rel="stylesheet" href="styles/styles.css">
 
-        <!--Landing Page-->
-        <div class="position-relative text-white container text-center h-100 d-flex flex-column justify-content-center">
-            <h1 class="display-4">Hello World</h1>
-            <p> The Landing page's goal is to draw the visitor’s attention or highlight information. </p>
-            <div>
-                <button class="btn btn-outline-light" type="button" onclick="document.location='projects.html' ">
-                   <i class="bi bi-code-slash"></i> Code
-                </button>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-icons.css">
+</head>
 
-                <button class="btn btn-outline-light" type="button" onclick="document.location='blog.html' ">
-                    <i class="bi bi-chat-dots"></i>  Blog
-                </button>
+<body class="bg-dark">
+    <!--Background Image-->
+    <img class="position-absolute img-fluid " src="assets/bg-image.jpg">
 
-                <button class="btn btn-outline-light" type="button" onclick="document.location='about.html' ">
-                    <i class="bi bi-person"></i>  About
-                </button>
-
-                <button class="btn btn-outline-light" type="button" onclick="document.location='contact.html' ">
-                    <i class="bi bi-envelope"></i>  Contact
-                </button>
+    <div id="Navigation" class="container">
+        <nav class="navbar navbar-expand-md navbar-light container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-house text-light"></i>
+            </a>
+            <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbar-options">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-options">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="projects.html">
+                            <i class="bi bi-code-slash"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="blog.html">
+                            <i class="bi bi-chat-dots"></i> Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="about.html">
+                            <i class="bi bi-person"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-secondary nav-link text-light" href="contact.html">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
+                
+                </ul>
             </div>
+        </nav>
+    </div>
+
+    <div class="position-relative text-white container text-center h-100 d-flex flex-column justify-content-center">
+        <div class="text-center">
+            <img class="img-thumbnail rounded-circle w-50" src="assets/headshot-2.JPG">
+            <div class="d-flex justify-content-center gap-4 m-4">
+                <a href="https://discordapp.com/users/Dekaid#6986" class='text-white'> <i class="bi bi-discord"></i> </a>
+                <a href="https://www.linkedin.com/in/andytran1999/" class='text-white'> <i class="bi bi-linkedin"></i> </a>
+                <a href="https://github.com/Dekaid" class='text-white'> <i class="bi bi-github"></i> </a>
+            </div>
+            <hr>
+
+            <div class="d-flex row row-cols-1">
+                <span> Education: <span>
+                <small> Computer Science, B.S. </small>
+                <small> University New Orleans </small>
+            </div>
+            <hr>
+        </div>
+        
+    </div>
+
+
+    <div id="About"
+        class="position-relative text-white container h-100 d-flex flex-column justify-content-end">
+        <div class='container'>
+            <h1 class='display-1 mt-4 text-uppercase text-center'>
+                <i class="bi bi-person"></i> About Me
+            </h1>
+            <hr>
         </div>
 
-        <!--Bootstrap Bundle with Popper-->
-        <script src="scripts/bootstrap.bundle.min.js"></script>
-    </body>
+        <!-- About Me -->
+        <div class='container-fluid text-light row'>
+
+            <!--Name & Skills -->
+            <div class="bg-secondary cool-md-10">
+                <!-- Introduction -->
+                <div class="row">
+                    <div>
+                        <h1>Hello, my name is Andy Tran.</h1>
+                        <p> 
+                            I am undergraduate in my 4th year of college. 
+                            During my time at UNO, I learn a lot about computer science.
+                            The first programming language I learn was Java. As a progress throughout the years, I was expose to more languagaes.
+                            I learn React Native and use that language to make a mobile application. Created a concert ticket system using Java in NetBeans Apache.
+                            I am still learning and will continue to learn even after I graduate.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Skills -->
+                <hr>
+                <h2 class="display-6 text-left">Programming Skills:</h2>
+                <div class="d-flex row row-cols-5">
+                    <img src="assets/icon-java.png">
+                    <img src="assets/icon-js.png">
+                    <img src="assets/icon-html5.png">
+                    <img src="assets/icon-css3.png">
+                    <img src="assets/icon-python.png">
+                    <img src="assets/icon-orcale-sql.png">
+                    
+
+                </div>
+                <hr>
+                <div class="text-center">
+                    <a class="btn btn-primary border border-3 border-primary" 
+                    href="https://drive.google.com/file/d/1_1K8aPK3eb5sLq4cGQZT7vaK-zyXdxD-/view?usp=sharing">
+                        Resume
+                    </a>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Bootstrap Bundle with Popper-->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

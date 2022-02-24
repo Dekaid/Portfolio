@@ -6,48 +6,51 @@
         <meta charset="utf-8">
         <meta name="viewpoint" content="width=device-width, initial-scale=1">
 
+        <!--Styles CSS-->
+        <link rel="stylesheet" href="styles/styles.css">
+        
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="styles/bootstrap.min.css">
         <link rel="stylesheet" href="styles/bootstrap-icons.css">
     </head>
 
-    <body class="bg-danger text-light">
+    <body class="bg-dark text-light">
         <!--NavBar-->
-        <nav class="navbar navbar-light bg-light container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <i class="bi bi-house"></i> Andy Tran
-            </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-options">
-                <i class="navbar-toggler-icon"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-options">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">
-                            <i class="bi bi-code-slash"></i> Code
-                        </a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">
-                         <i class="bi bi-chat-dots"></i> Blog
-                        </a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
-                            <i class="bi bi-person"></i> About
-                        </a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            <i class="bi bi-envelope"></i> Contact
-                        </a>
-                    </li>
-                </ul>      
-            </div>          
-        </nav>
+        <div id="Navigation" class="container">
+            <nav class="navbar navbar-expand-md navbar-light container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-house text-light"></i>
+                </a>
+                <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbar-options">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-options">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="projects.html">
+                                <i class="bi bi-code-slash"></i> Projects
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="blog.html">
+                                <i class="bi bi-chat-dots"></i> Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html#About">
+                                <i class="bi bi-person"></i> About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-secondary nav-link text-light" href="contact.html">
+                                <i class="bi bi-envelope"></i> Contact
+                            </a>
+                        </li>
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <!--Blog Page-->
         <div class="container mt-4">
@@ -70,7 +73,7 @@
 
                 <!--Slide 1-->
                 <div id="slide-1" class="carousel-item active">
-                    <img class="img-fluid" src="assets/bg-image.png">
+                    <img class="img-fluid" src="assets/favicon.png">
                     <div class="carousel-caption">
                         <h5> Blog Post 1</h5>
                         <p> Sentence describing topic for Blog Article 1 </p>
@@ -80,7 +83,7 @@
 
                 <!--Slide 2-->
                 <div id="slide-2" class="carousel-item">
-                    <img class="img-fluid" src="assets/bg-image.png">
+                    <img class="img-fluid" src="assets/favicon.png">
                     <div class="carousel-caption">
                         <h5> Blog Post 2</h5>
                         <p> Sentence describing topic for Blog Article 2 </p>

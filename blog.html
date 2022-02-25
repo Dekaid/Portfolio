@@ -1,108 +1,232 @@
 <html>
-    <head>
-        <link rel="icon" href="assets/favicon.png">
-        <title>Andy Tran</title>
 
-        <meta charset="utf-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="icon" href="assets/favicon.png">
+    <title>Andy Tran</title>
 
-        <!--Styles CSS-->
-        <link rel="stylesheet" href="styles/styles.css">
-        
-        <!-- Bootstrap CSS-->
-        <link rel="stylesheet" href="styles/bootstrap.min.css">
-        <link rel="stylesheet" href="styles/bootstrap-icons.css">
-    </head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
 
-    <body class="bg-dark text-light">
-        <!--NavBar-->
-        <div id="Navigation" class="container">
-            <nav class="navbar navbar-expand-md navbar-light container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <i class="bi bi-house text-light"></i>
-                </a>
-                <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbar-options">
-                    <i class="navbar-toggler-icon"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-options">
-                    <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="projects.html">
-                                <i class="bi bi-code-slash"></i> Projects
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="blog.html">
-                                <i class="bi bi-chat-dots"></i> Blog
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="index.html#About">
-                                <i class="bi bi-person"></i> About
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-secondary nav-link text-light" href="contact.html">
-                                <i class="bi bi-envelope"></i> Contact
-                            </a>
-                        </li>
-                    
-                    </ul>
-                </div>
-            </nav>
-        </div>
+    <!--Styles CSS-->
+    <link rel="stylesheet" href="styles/styles.css">
 
-        <!--Blog Page-->
-        <div class="container mt-4">
-            <h1>
-                <i class="bi bi-chat-dots"></i> Blog
-            </h1>
-            <hr>
-        </div>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-icons.css">
+</head>
 
-        <!--Carousel-->
-        <div id="blog-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
-            <!--Carousel Menu-->
-            <ol class="carousel-indicators">
-                <li data-bs-target="#blog-carousel" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#blog-carousel" data-bs-slide-to="1"></li>
-            </ol>
+<body class="bg-dark text-light">
+    <!--NavBar-->
+    <div id="Navigation" class="container">
+        <nav class="navbar navbar-expand-md navbar-light container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-house text-light"></i>
+            </a>
+            <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbar-options">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-options">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="projects.html">
+                            <i class="bi bi-code-slash"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="blog.html">
+                            <i class="bi bi-chat-dots"></i> Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html#About">
+                            <i class="bi bi-person"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-secondary nav-link text-light" href="contact.html">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
 
-            <!--Carousel Body-->
-            <div class="carousel-inner text-center">
-
-                <!--Slide 1-->
-                <div id="slide-1" class="carousel-item active">
-                    <img class="img-fluid" src="assets/favicon.png">
-                    <div class="carousel-caption">
-                        <h5> Blog Post 1</h5>
-                        <p> Sentence describing topic for Blog Article 1 </p>
-                        <button onclick="document.location='articles/article-01.html'"> Read More </button>
-                    </div>
-                </div>
-
-                <!--Slide 2-->
-                <div id="slide-2" class="carousel-item">
-                    <img class="img-fluid" src="assets/favicon.png">
-                    <div class="carousel-caption">
-                        <h5> Blog Post 2</h5>
-                        <p> Sentence describing topic for Blog Article 2 </p>
-                        <button onclick="document.location='articles/article-02.html'"> Read More </button>
-                    </div>
-                </div>
-
+                </ul>
             </div>
+        </nav>
+    </div>
 
-            <!-- Carousel Controls -->
-            <a class="carousel-control-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
-                <i class="carousel-control-prev-icon"></i>
-            </a>
-            <a class="carousel-control-next" href="#blog-carousel" role="button" data-bs-slide="next">
-                <i class="carousel-control-next-icon"></i>
-            </a>
+    <!--Blog Page-->
+    <div class="container mt-4">
+        <h1>
+            <i class="bi bi-chat-dots"></i> Blog
+        </h1>
+        <hr>
+    </div>
 
+    <!--Plog Posts Container-->
+    <div class="container-md">
+
+        <!--Blog 3-->
+        <div class="jumbotron jumbotron-fluid bg-secondary rounded border border-danger border-3">
+            <div class="container">
+                <h1 class="display-4 text-dark">Post 3 - Portfolio Homework & Test </h1>
+                <small> February 24, 2022 </small>
+                <hr class="my-4 text-danger">
+                <p class="lead">
+                    Making is portfolio was an interesting homework assignment because I can use this in the future.
+                    I try to update this portfolio as time goes on. I also have a test tommorrow.
+                </p>
+                <hr class="my-4 text-danger">
+
+                <!-- Button trigger modal -->
+                <div class="text-center mb-4">
+                    <button type="button" class="btn btn-primary btn-lg lead" data-bs-toggle="modal"
+                        data-bs-target="#modalPost-3">
+                        Read
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalPost-3" tabindex="-1" aria-labelledby="modalPost-3Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                        <div class="modal-content  text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalPost-3Label">Portfolio & Test</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    I did the best that I can with this portfolio homework and I am proud of what I made.
+                                    Although it is not the best portfolio, I will improve my skill and make the best portfolio as
+                                    the semester continues. I try to learn more about other CSS frameworks that are different from Bootstrap.
+                                    <br><br>
+                                    Now that I am finish with my portfolio, it is time for to study for my test tommorrow.
+                                    The test I have tommorrow for my finicial literacy class. The class involves meet knowing
+                                    finicial terminology and solve money problems. Wish me luck.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <script src="scripts/bootstrap.bundle.min.js"></script>
-    </body>
+        <div class="jumbotron jumbotron-fluid bg-secondary rounded border border-danger border-3 mt-4">
+            <div class="container">
+                <h1 class="display-4 text-dark">Post 2 - LED FastStart</h1>
+                <small> February 23, 2022</small>
+                <hr class="my-4 text-danger">
+                <p class="lead">
+                    I went to an online career fair and there were a lot of tech companies.
+
+                </p>
+                <hr class="my-4 text-danger">
+
+                <!-- Button trigger modal -->
+                <div class="text-center mb-4">
+                    <button type="button" class="btn btn-primary btn-lg lead" data-bs-toggle="modal"
+                        data-bs-target="#modalPost-2">
+                        Read
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalPost-2" tabindex="-1" aria-labelledby="modalPost-2Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                        <div class="modal-content  text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalPost-2Label">Finding a Job</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    I went to a online career fair and there were three companies that position I can applied
+                                    and in New Orleans. The three were StrikerVR, Prokeep, and Performance Software, but I was only
+                                    able to attend two of the three. 
+                                    <br><br>
+                                    The first panel I attend is <a href="https://www.psware.com/">Performance Software</a> and the company deals
+                                    with aviation i.e. aircrafts. The recriuter has work there for 3 years after graduating. 
+                                    <br><br>
+                                    The second panel I attend is <a href="https://www.strikervr.com/">StrikerVR</a> and I heard about them before. I think they did a presentation at
+                                    UNO before COVID-19 happen. I could talk to the recruiter through mic but I was able to schedule one for a later data.
+                                    StrikerVR works with virtual reality and also involve guns. 
+                                    <br><br>
+                                    The third panel, <a href="https://www.prokeep.com/">Prokeep</a>, I couldn't attend is due to all three recruiters left before end time of the event.
+                                    I still apply for all three of them.
+
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid bg-secondary rounded border border-danger border-3 mt-4">
+            <div class="container">
+                <h1 class="display-4 text-dark">Post 1 - HTML Homework</h1>
+                <small> February 17, 2022 </small>
+                <hr class="my-4 text-danger">
+                <p class="lead">
+                    The first time I ever create a scary story in HTML.
+                </p>
+                <hr class="my-4 text-danger">
+
+                <!-- Button trigger modal -->
+                <div class="text-center mb-4">
+                    <button type="button" class="btn btn-primary btn-lg lead" data-bs-toggle="modal"
+                        data-bs-target="#modalPost-1">
+                        Read
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalPost-1" tabindex="-1" aria-labelledby="modalPost-1Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                        <div class="modal-content  text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalPost-1Label">HTML Homework - Revival Floor</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Revival Floor is a scary/horror/creepy pasta type of a story genre.
+                                    It was written in HTML present the story using text and images. I use about 15
+                                    differnt HTML files for the story because I want the user to navigate between different HTML files.
+                                    <br> <br>
+                                    I implemented a custom CSS files to style the story. I made the image either small or move it around the page.
+                                    I imported custom text font to make the atmosphere scary. Added sounds later to up the creepy factor.
+                                    Although it was a story, it was more of an interactive story where the user can interact with the page.
+                                    I had implement some JavaScripts to make all the HTML more interactive.
+                                    <br> <br>
+                                    I made it so that you can click buttons to change images, other HTML pages are locked until user
+                                    posses a certain item, and keeping track of items the user will find throughout the story.
+                                    <br> <br>
+                                    You can play Revival Floor <a href="projects.html" class="tooltip-test " title="Revival Floor">here</a> 
+
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
